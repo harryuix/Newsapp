@@ -10,6 +10,10 @@
     height:500px;
 }
 
+.text-align{
+    text-align: center;
+}
+
 .example-header-image { 
   background-size: cover;
 }
