@@ -1,5 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 body {
-    background:lightgray;
+    background:#100e17;
+    font-family: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
+}
+.mat-card{
+    background: #201c29;
+    color: wheat;
+    box-shadow: 0 4px 80px #000;
+}
+
+.wheat{
+    color: wheat;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+    color: olivedrab;
 }
