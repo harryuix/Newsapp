@@ -14,8 +14,27 @@ body {
     color: wheat;
 }
 
+.news-logo{
+    height: 100px;
+    width: 230px;
+    margin-left: 44%;
+}
+
+.mat-tab-header-pagination-chevron{
+    border-color: wheat !important;
+}
+
 .fs-30{
     font-size: 30px;
+}
+
+.mat-ink-bar{
+    background-color: greenyellow !important;
+}
+
+.mat-tab-label-content{
+    color: wheat;
+    font-size: 25px;
 }
 
 

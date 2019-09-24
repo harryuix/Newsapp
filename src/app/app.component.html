@@ -23,22 +23,128 @@
   </mat-sidenav>
   
 </mat-sidenav-container>--> 
-<h4 class="text-align wheat fs-30">Estonia Latest News </h4>
-<ng-container *ngFor="let article of mArticles">
-<mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
-    <mat-card-header>
-      <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
-      <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
-      <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
-    <mat-card-content>
-      <p>
-        {{article.description | slice:0:300}}
-      </p>
-    </mat-card-content>
-    <mat-card-actions class="action-buttons">
-      <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
-    </mat-card-actions>
-  </mat-card> 
-</ng-container>
+<!--<h4 class="text-align wheat fs-30">Estonia News </h4>-->
+<img class="news-logo" src="../assets/images/estonianNews.png">
+<mat-tab-group>
+  <mat-tab label="Home"> 
+    <ng-container *ngFor="let article of mArticles">
+      <mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+            <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
+              <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+          <mat-card-content>
+            <p>
+              {{article.description | slice:0:300}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="action-buttons">
+            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+          </mat-card-actions>
+      </mat-card> 
+    </ng-container>
+  </mat-tab>
+  <mat-tab label="Sports">
+    <ng-container *ngFor="let article of mSports">
+      <mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+            <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
+              <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+          <mat-card-content>
+            <p>
+              {{article.description | slice:0:300}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="action-buttons">
+            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+          </mat-card-actions>
+      </mat-card> 
+    </ng-container>
+  </mat-tab>
+  <mat-tab label="Entertainment">
+    <ng-container *ngFor="let article of mEntertainment">
+      <mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+            <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
+              <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+          <mat-card-content>
+            <p>
+              {{article.description | slice:0:300}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="action-buttons">
+            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+          </mat-card-actions>
+      </mat-card> 
+    </ng-container>
+  </mat-tab>
+   <mat-tab label="Politics">
+    <ng-container *ngFor="let article of mPolitics">
+      <mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+            <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
+              <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+          <mat-card-content>
+            <p>
+              {{article.description | slice:0:300}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="action-buttons">
+            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+          </mat-card-actions>
+      </mat-card> 
+    </ng-container>
+  </mat-tab>
+   <mat-tab label="Technology">
+    <ng-container *ngFor="let article of mTechnology">
+      <mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+            <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
+              <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+          <mat-card-content>
+            <p>
+              {{article.description | slice:0:300}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="action-buttons">
+            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+          </mat-card-actions>
+      </mat-card> 
+    </ng-container>
+  </mat-tab>
+   <mat-tab label="Finance">
+    <ng-container *ngFor="let article of mFinance">
+      <mat-card class="example-card"   *ngIf='article.urlToImage != null' [hidden]="true">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+            <mat-card-title class="title">{{article.title | slice:0:55}}</mat-card-title>
+              <mat-card-subtitle class="wheat">{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+          <mat-card-content>
+            <p>
+              {{article.description | slice:0:300}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="action-buttons">
+            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+          </mat-card-actions>
+      </mat-card> 
+    </ng-container>
+  </mat-tab>
+</mat-tab-group>
+
